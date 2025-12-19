@@ -1,0 +1,110 @@
+@import url(./colors.css);
+
+.projectTypes > li {
+  margin: 30px;
+  border: 0.4px;
+  border-radius: 12px;
+  border-color: var(--black-100);
+  border-style: solid;
+  padding: 4px 8px;
+  background-color: var(--black-50);
+  gap: 10px;
+}
+
+.projectTypes > li > a {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* active filter tab */
+.projectTypes li.active {
+  background-color: var(--orange-400);
+  color: white;
+}
+
+/* optional: highlight text link too */
+.projectTypes li.active a {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* wrapper for hiding entire block */
+.project-item.hide {
+  display: none;
+}
+
+.project-card {
+  width: 280px;
+  height: 250px;
+  background: #c4b4a6;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card img {
+  position: absolute;
+  width: 50%;
+  max-width: 260px;
+  height: auto;
+  padding-left: 20px;
+}
+
+.image-back {
+  top: 0;
+  left: 40%;
+  opacity: 0.95;
+  transform: translateY(-220px);
+}
+
+.image-front {
+  top: 40px;
+  z-index: 1;
+}
+
+.project-category {
+  color: var(--orange-400);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: bold;
+}
+
+/* optional: pointer on filter buttons */
+.filter-btn {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .services-list {
+    margin: 10px;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .projectTypes {
+    flex-wrap: wrap;
+  }
+
+  .projectTypes > li {
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .projectTypes > li > a {
+    white-space: nowrap;
+  }
+}

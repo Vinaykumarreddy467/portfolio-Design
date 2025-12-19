@@ -1,0 +1,31 @@
+@import url(./colors.css);
+
+.services-list {
+    gap: 30px;
+}
+
+.dummy-img {
+    height: 50px;
+    width: 50px;
+}
+
+.card {
+    background-color: var(--black-50);
+    padding: 15px 8px;
+    border-radius: 14px;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 768px) {
+    
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card {
+        width: 100%; /* Full width cards on mobile */
+        align-items: center;
+    }
+}

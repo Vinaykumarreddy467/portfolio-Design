@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/progressbar.css">
+    <link rel="stylesheet" href="./css/flexproperties.css">
+    <link rel="stylesheet" href="./css/displayProperties.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/alignments.css">
+    <link rel="stylesheet" href="./css/alignments.css">
+    <link rel="stylesheet" href="./css/myProject.css">
+    <link rel="stylesheet" href="./css/swiperSlider.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!-- Poppins google font cdn  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav margin-x align-center gap-3 pt-10" >
+
+            <div class="nav-logo">
+                <img class="nav-image" src="./images/banner-image.png" alt="Logo">
+            </div>
+
+            <!-- MENU TOGGLE BUTTON -->
+            <button class="menu-button nav-toggle" aria-label="Toggle navigation">
+                <img src="./images/list.svg" alt="Menu Icon" class="icon-image">
+            </button>
+
+            <ul class="nav-list space-between p-1">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="" class="button">Download CV</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- banner section -->
+        <section class="hero margin-x" id="home">
+            <div class="hero-content">
+                <h1 class="hero-content-title p-0 im-text">I'm</h1>
+                <h1 class="hero-content-name p-0 portfolio-name">Fawzi Sayed</h1>
+                <p class="UiUx">UI & UX</p>
+                <p class="Designer">Designer</p>
+                <article>
+                    <p class="hero-content-description">
+                        I am a passionate frontend developer with experience in creating dynamic and responsive web
+                        applications. I specialize in HTML, CSS, and JavaScript, and I love bringing designs to life on
+                        the web.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <img class="hero-image" src="./images/profile.png" alt="">
+                <div class="social-icons">
+                    <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="./images/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="./images/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="margin-x">
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="aboutMe" id="about">
+                <div>
+                    <img class="aboutMe-image" src="./images/AboutMe.png" alt="About Me Image">
+
+                </div>
+                <div class="aboutMe-text">
+                    <h1>About Me</h1>
+                    <p>
+                        I am a passionate frontend developer with experience in creating dynamic and responsive web
+                        applications. I specialize in HTML, CSS, and JavaScript, and I love bringing designs to life on
+                        the
+                        web.
+                    </p>
+                    <div class="skills">
+
+                        <div class="skill">
+                            <span>UX</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%;"></div>
+                                <!-- // input range -->
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Website Design</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>App Design</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Graphic Design</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- services section -->
+        <section class="mt-50" id="services">
+            <div class="flex-center text-align-center">
+                <h1>Services</h1>
+                <p class="p-max">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eaque
+                    obcaecati vitae aut,
+                    eius
+                    dolorem error sed incidunt temporibus quae iste molestias maiores, magni provident nihil
+                    perspiciatis.
+                    Fugiat, facere iste.</p>
+            </div>
+            <div class="justify-between mt-50">
+                <ul class="services-list flex-row mt-50 ">
+                    <li class="card">
+                        <div>
+                            <img class="dummy-img" src="./images/vector-images/Vector (1).png" alt="">
+                        </div>
+                        <div>
+                            <h3>UI/UX</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div>
+                            <img class="dummy-img" src="./images/vector-images/Vector (2).png" alt="">
+                        </div>
+                        <div>
+                            <h3>Web Design</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div>
+                            <img class="dummy-img" src="./images/vector-images/Vector (3).png" alt="">
+                        </div>
+                        <div>
+                            <h3>App Design</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div>
+                            <img class="dummy-img" src="./images/vector-images/Vector (4).png" alt="">
+                        </div>
+                        <div>
+                            <h3>Graphic Design</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- My Projects section  -->
+        <!-- <section class="mt-50">
+            <div class="text-align-center flex-center">
+                <h1 class="title-tag">My Project</h1>
+                <p class="p-max">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sequi accusantium cum
+                    placeat a ad, vel earum, reiciendis consequatur aspernatur ducimus, quae quidem dolores dolore sit
+                    illum expedita
+                    deleniti tenetur!</p>
+            </div>
+            <div class="pt-30">
+                <ul class="flex-row justify-center p-30  projectTypes">
+                    <li><a class="filter-btn" data-filter="all">All</a></li>
+                    <li><a class="filter-btn" data-filter="UI/UX">UI/UX</a></li>
+                    <li><a class="filter-btn" data-filter="Web Design">Web Design</a></li>
+                    <li><a class="filter-btn" data-filter="Graphic Design">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <div>
+                    <div class="project-card" data-category="Web Design">
+                        <img class="image-back" src="images/web-design1.png" alt="">
+                        <img class="image-front" src="images/web-design1.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Web Design</p>
+                        <p class="project-title">AirCalling Landing Page Design</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="project-card" data-category="Web Design">
+                        <img class="image-back" src="images/web-design2.png" alt="">
+                        <img class="image-front" src="images/web-design2.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Web Design</p>
+                        <p class="project-title">Business Landing Page Design</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="project-card" data-category="Web Design">
+                        <img class="image-back" src="images/web-design3.png" alt="">
+                        <img class="image-front" src="images/web-design3.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Web Design</p>
+                        <p class="project-title">Ecom Web Page Design</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> -->
+
+        <section class="mt-50" id="projects">
+            <div class="text-align-center flex-center">
+                <h1 class="title-tag">My Project</h1>
+                <p class="p-max">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sequi accusantium cum
+                    placeat a ad, vel earum, reiciendis consequatur aspernatur ducimus, quae quidem dolores
+                    dolore sit illum expedita deleniti tenetur!
+                </p>
+            </div>
+
+            <!-- FILTER TABS -->
+            <div class="pt-30">
+                <ul class="flex-row justify-center p-30 projectTypes">
+                    <li class="active">
+                        <a class="filter-btn" data-filter="all">All</a>
+                    </li>
+                    <li>
+                        <a class="filter-btn" data-filter="UI/UX">UI/UX</a>
+                    </li>
+                    <li>
+                        <a class="filter-btn" data-filter="Web Design">Web Design</a>
+                    </li>
+                    <li>
+                        <a class="filter-btn" data-filter="Graphic Design">Graphic Design</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- PROJECT CARDS -->
+            <div class="cards">
+                <!-- item 1 -->
+                <div class="project-item">
+                    <div class="project-card" data-category="Web Design">
+                        <img class="image-back" src="./images/web-design1.png" alt="">
+                        <img class="image-front" src="./images/web-design1.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Web Design</p>
+                        <p class="project-title">AirCalling Landing Page Design</p>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="project-item">
+                    <div class="project-card" data-category="Web Design">
+                        <img class="image-back" src="./images/web-design2.png" alt="">
+                        <img class="image-front" src="./images/web-design2.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Web Design</p>
+                        <p class="project-title">Business Landing Page Design</p>
+                    </div>
+                </div>
+
+                <!-- item 3 -->
+                <div class="project-item">
+                    <div class="project-card" data-category="Web Design">
+                        <img class="image-back" src="./images/web-design3.png" alt="">
+                        <img class="image-front" src="./images/web-design3.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Web Design</p>
+                        <p class="project-title">Ecom Web Page Design</p>
+                    </div>
+                </div>
+
+                <!-- example UI/UX item -->
+                <div class="project-item">
+                    <div class="project-card" data-category="UI/UX">
+                        <img class="image-back" src="./images/web-design2.png" alt="">
+                        <img class="image-front" src="./images/web-design2.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">UI/UX</p>
+                        <p class="project-title">Mobile App UI Concept</p>
+                    </div>
+                </div>
+
+                <!-- example Graphic Design item -->
+                <div class="project-item">
+                    <div class="project-card" data-category="Graphic Design">
+                        <img class="image-back" src="./images/web-design1.png" alt="">
+                        <img class="image-front" src="./images/web-design1.png" alt="">
+                    </div>
+                    <div class="pt-20 p-1">
+                        <p class="project-category">Graphic Design</p>
+                        <p class="project-title">Branding Poster Design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonials section  -->
+        <section class="mt-50" id="testimonials">
+            <div class="text-align-center flex-center">
+                <h1 class="title-tag">Testimonials</h1>
+                <p class="p-max">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et porro optio,
+                    dignissimos a voluptatem eligendi eaque aliquid perferendis harum neque in iste odio ducimus quod
+                    doloremque ut culpa amet?</p>
+            </div>
+            <!-- swiper slide  -->
+
+            <div class="swiper testimonial-swiper mt-50">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="images/photo2.jpg" class="avatar">
+                            <div class="content">
+                                <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    commodi error eaque earum repellendus quo voluptatum, omnis eos impedit possimus
+                                    accusamus maxime dolore corrupti quae ipsum? Quidem quia doloremque nobis!</p>
+                                <h4 class="testimonial-name">Name</h4>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="images/photo1.jpg" class="avatar">
+                            <div class="content">
+                                <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    commodi error eaque earum repellendus quo voluptatum, omnis eos impedit possimus
+                                    accusamus maxime dolore corrupti quae ipsum? Quidem quia doloremque nobis!</p>
+                                <h4 class="testimonial-name">Name</h4>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="images/photo1.jpg" class="avatar">
+                            <div class="content">
+                                <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    commodi error eaque earum repellendus quo voluptatum, omnis eos impedit possimus
+                                    accusamus maxime dolore corrupti quae ipsum? Quidem quia doloremque nobis!</p>
+                                <h4>naresh</h4>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="images/photo2.jpg" class="avatar">
+                            <div class="content">
+                                <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    commodi error eaque earum repellendus quo voluptatum, omnis eos impedit possimus
+                                    accusamus maxime dolore corrupti quae ipsum? Quidem quia doloremque nobis!</p>
+                                <h4>vomshi</h4>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination mt-30"></div>
+            </div>
+
+            <!-- <div class="swiper testimonial-swiper mt-50">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="images/photo2.jpg" class="avatar" alt="client photo">
+                            <div class="content">
+                                <p class="quote">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    commodi error eaque earum repellendus quo voluptatum, omnis eos impedit
+                                    possimus accusamus maxime dolore corrupti quae ipsum? Quidem quia
+                                    doloremque nobis!
+                                </p>
+                                <h4 class="testimonial-name">Name</h4>
+                                <small>CEO</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-30"></div>
+            </div> -->
+
+
+        </section>
+
+        <!-- lets design together / contact-->
+        <section class="mt-50" id="contact">
+            <div class="flex-column gap-3">
+                <div class="text-align-center flex-center">
+                    <h1 class="title-tag">lets design together</h1>
+                    <p class="p-max">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et porro optio,
+                        dignissimos a voluptatem eligendi eaque aliquid perferendis harum neque in iste odio ducimus
+                        quod
+                        doloremque ut culpa amet?</p>
+                </div>
+
+                <div class="flex-row justify-center email">
+                    
+                        <input class="email-id" type="email" name="email_address" placeholder="Enter your Email">
+                        <button class="p-0 button">Contact Me</button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (optional) -->
+    <footer>
+        <section class="mt-50">
+            <div class="flex-column align-center pt-30">
+                <img class="footer-image" src="./images/footer-Image.png" alt="">
+            </div>
+            <div class="mt-30">
+                <nav class="flex-row justify-center">
+                    <ul class="">
+                        <ul class="nav-list p-1">
+                            <li class="p-0"><a href="#home">Home</a></li>
+                            <li class="p-0"><a href="#about">About Me</a></li>
+                            <li class="p-0"><a href="#services">Services</a></li>
+                            <li class="p-0"><a href="#projects">Projects</a></li>
+                            <li class="p-0"><a href="#testimonials">Testimonials</a></li>
+                            <li class="p-0"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <div class="social-icons pb-50">
+                    <a href="#" class="footer-icons"><img src="./images/facebook.svg" alt="Facebook"></a>
+                    <a href="#" class="footer-icons"><img src="./images/twitter.svg" alt="Twitter"></a>
+                    <a href="#" class="footer-icons"><img src="./images/instagram.svg" alt="Instagram"></a>
+                    <a href="#" class="footer-icons"><img src="./images/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="text-align-center copyright pt-10 pb-10">
+                <p>© 2025 <span class="FawziUiUx">FawziUiUx </span>All Rights Reserved, Inc</p>
+            </div>
+        </section>
+
+    </footer>
+
+    <!-- this for the menu toggle  -->
+    <script src="./js/toggle.js"></script>
+
+    <!-- filter js file  -->
+    <script src="./js/filter.js"></script>
+    <!-- swiper Script  -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper.js"></script> -->
+    <script>
+        new Swiper(".testimonial-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            centeredSlides: true,
+
+            loop: false,
+
+            autoplay: {
+                delay: 3000,              // 3 seconds
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,  // stops on hover
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
