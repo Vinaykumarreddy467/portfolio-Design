@@ -27,6 +27,7 @@
 .nav-list li a {
   border-bottom: 3px solid white;
   transition: 0.2s ease-in-out;
+  padding-bottom: 9px;
 }
 
 .nav-list li a:hover,
@@ -36,7 +37,6 @@
 
 .button {
   background-color: #fd6f00;
-  border-radius: 10px;
   padding: 5px 15px;
   color: #fff;
   cursor: pointer;
@@ -139,20 +139,32 @@
     font-size: 40px;
 }
 
+
 .Designer {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 60px;
     padding-left: 10vw;
-}
+    padding-bottom: 10px;
+    line-height: 1;
+  }
 
 .hero-image {
     height: 300px;
     width: 250px;
     align-content: flex-end;
-    border: 6px solid #fd6f00;
+    border: 6px solid var(--orange-500);
     border-color: linear-gradient(45deg, #fd6f00, #ffb800);
     border-radius: 50%;
     border-width: 5px;
+}
+.HireMe{
+    background-color: var(--orange-500);
+    border-radius: 5px;
+}
+.HireMe:hover{
+  transform: translateY(-3px);
+  fill: #535252;
+  filter: drop-shadow(2px 2px  #646363);
 }
 
 .social-icons {
@@ -161,6 +173,11 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+}
+.social-icons a img:hover{
+    fill: #535252;
+    filter: drop-shadow(5px 0 20px #1d1c1c);
+    transform: translateY(-2px);
 }
 
 /* //about me  */

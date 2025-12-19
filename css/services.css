@@ -7,14 +7,17 @@
 .dummy-img {
     height: 50px;
     width: 50px;
+    margin-top: 20px;
 }
 
 .card {
     background-color: var(--black-50);
-    padding: 15px 8px;
-    border-radius: 14px;
+    padding: 10px 30px;
+    border-radius: 15px;
     flex-wrap: wrap;
-
+}
+.card>p{
+    margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {

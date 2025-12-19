@@ -20,11 +20,13 @@
 .projectTypes li.active {
   background-color: var(--orange-400);
   color: white;
+  transform: translateY(-2px);
 }
 
 /* optional: highlight text link too */
 .projectTypes li.active a {
   color: white;
+  
 }
 
 .cards {
@@ -81,6 +83,7 @@
 .filter-btn {
   text-decoration: none;
   color: inherit;
+  padding: 2px 5px;
 }
 
 /* responsive */

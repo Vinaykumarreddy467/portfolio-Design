@@ -54,6 +54,12 @@ h6 {
 .mt-50{
     margin-top: 50px;
 }
+.mt-60{
+    margin-top: 60px;
+}
+.mt-70{
+    margin-top: 70px;
+}
 
 .p-0{
     padding: 5px
@@ -69,6 +75,9 @@ h6 {
 }
 .pt-30{
     padding-top: 30px;
+}
+.pt-40{
+    padding-top: 40px;
 }
 
 
@@ -162,7 +171,9 @@ li{
 }
 
 .title-tag{
-    font-size: 30px;
+    font-size: 65px;
+    font-weight: 500px;
+
 }
 .button-primary {
     background-color: #fd6f00;
