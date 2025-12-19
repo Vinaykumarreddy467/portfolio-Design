@@ -8,7 +8,10 @@
     
 }
 .copyright{
-    background-color: var(--black-400);
+    background-color: var(--black-300);
+}
+.copyright>p{
+    color: #f7f7f7;
 }
 .FawziUiUx{
     color: var(--orange-500);
