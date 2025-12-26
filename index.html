@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frontend Developer Portfolio showcasing UI/UX design, web projects, and services.">
+
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/banner.css">
@@ -11,7 +14,6 @@
     <link rel="stylesheet" href="./css/flexproperties.css">
     <link rel="stylesheet" href="./css/displayProperties.css">
     <link rel="stylesheet" href="./css/services.css">
-    <link rel="stylesheet" href="./css/alignments.css">
     <link rel="stylesheet" href="./css/alignments.css">
     <link rel="stylesheet" href="./css/myProject.css">
     <link rel="stylesheet" href="./css/swiperSlider.css">
@@ -22,12 +24,18 @@
 
     <!-- Poppins google font cdn  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- the  toggle menu  -->
+    <script src="./js/toggle.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
     <header>
         <!-- nav bar -->
-        <nav class="nav margin-x align-center gap-2 pt-10" >
+        <nav class="nav margin-x align-center gap-2 pt-10">
 
             <div class="nav-logo">
                 <img class="nav-image" src="./images/logo.png" alt="Logo">
@@ -58,12 +66,12 @@
                 <p class="UiUx">UI & UX</p>
                 <p class="Designer">Designer</p>
                 <article>
-                    <p class="hero-content-description">
+                    <p class="hero-content-description mb-20">
                         I am a passionate frontend developer with experience in creating dynamic and responsive web
                         applications. I specialize in HTML, CSS, and JavaScript, and I love bringing designs to life on
                         the web.
                     </p>
-                    <button class="button mt-20 HireMe"><a href="">Hire Me</a></button>
+                    <a href="#" class="button mt-20  HireMe" aria-label="Hire me">Hire Me</a>
                 </article>
             </div>
             <div>
@@ -79,8 +87,8 @@
     </header>
     <main class="margin-x">
         <!-- About Me Section -->
-        <section class="mt-60" id="about" >
-            <div class="aboutMe" id="about">
+        <section class="mt-60" id="about">
+            <div class="aboutMe">
                 <div>
                     <img class="aboutMe-image" src="./images/AboutMe.png" alt="About Me Image">
 
@@ -98,29 +106,28 @@
                         <div class="skill">
                             <span>UX</span>
                             <div class="bar">
-                                <div class="progress" style="width: 90%;"></div>
-                                <!-- // input range -->
+                                <div class="progress progress-90"></div>
                             </div>
                         </div>
 
                         <div class="skill">
                             <span>Website Design</span>
                             <div class="bar">
-                                <div class="progress" style="width: 85%;"></div>
+                                <div class="progress progress-85"></div>
                             </div>
                         </div>
 
                         <div class="skill">
                             <span>App Design</span>
                             <div class="bar">
-                                <div class="progress" style="width: 95%;"></div>
+                                <div class="progress progress-95"></div>
                             </div>
                         </div>
 
                         <div class="skill">
                             <span>Graphic Design</span>
                             <div class="bar">
-                                <div class="progress" style="width: 88%;"></div>
+                                <div class="progress progress-88"></div>
                             </div>
                         </div>
 
@@ -153,7 +160,7 @@
                     </li>
                     <li class="card">
                         <div>
-                            <img class="dummy-img" src="./images/vector-images/Vector (2).png" alt="">
+                            <img class="dummy-img" src="./images/vector-images/Vector (2).png" alt="icon">
                         </div>
                         <div>
                             <h3>Web Design</h3>
@@ -162,7 +169,7 @@
                     </li>
                     <li class="card">
                         <div>
-                            <img class="dummy-img" src="./images/vector-images/Vector (3).png" alt="">
+                            <img class="dummy-img" src="./images/vector-images/Vector (3).png" alt="icon">
                         </div>
                         <div>
                             <h3>App Design</h3>
@@ -171,7 +178,7 @@
                     </li>
                     <li class="card">
                         <div>
-                            <img class="dummy-img" src="./images/vector-images/Vector (4).png" alt="">
+                            <img class="dummy-img" src="./images/vector-images/Vector (4).png" alt="icon">
                         </div>
                         <div>
                             <h3>Graphic Design</h3>
@@ -183,61 +190,6 @@
         </section>
 
         <!-- My Projects section  -->
-        <!-- <section class="mt-60">
-            <div class="text-align-center flex-center">
-                <h1 class="title-tag">My Project</h1>
-                <p class="p-max">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sequi accusantium cum
-                    placeat a ad, vel earum, reiciendis consequatur aspernatur ducimus, quae quidem dolores dolore sit
-                    illum expedita
-                    deleniti tenetur!</p>
-            </div>
-            <div class="pt-30">
-                <ul class="flex-row justify-center p-30  projectTypes">
-                    <li><a class="filter-btn" data-filter="all">All</a></li>
-                    <li><a class="filter-btn" data-filter="UI/UX">UI/UX</a></li>
-                    <li><a class="filter-btn" data-filter="Web Design">Web Design</a></li>
-                    <li><a class="filter-btn" data-filter="Graphic Design">Graphic Design</a></li>
-                </ul>
-            </div>
-
-            <div class="cards">
-                <div>
-                    <div class="project-card" data-category="Web Design">
-                        <img class="image-back" src="images/web-design1.png" alt="">
-                        <img class="image-front" src="images/web-design1.png" alt="">
-                    </div>
-                    <div class="pt-20 p-1">
-                        <p class="project-category">Web Design</p>
-                        <p class="project-title">AirCalling Landing Page Design</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="project-card" data-category="Web Design">
-                        <img class="image-back" src="images/web-design2.png" alt="">
-                        <img class="image-front" src="images/web-design2.png" alt="">
-                    </div>
-                    <div class="pt-20 p-1">
-                        <p class="project-category">Web Design</p>
-                        <p class="project-title">Business Landing Page Design</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="project-card" data-category="Web Design">
-                        <img class="image-back" src="images/web-design3.png" alt="">
-                        <img class="image-front" src="images/web-design3.png" alt="">
-                    </div>
-                    <div class="pt-20 p-1">
-                        <p class="project-category">Web Design</p>
-                        <p class="project-title">Ecom Web Page Design</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section> -->
 
         <section class="mt-60" id="projects">
             <div class="text-align-center flex-center">
@@ -272,8 +224,8 @@
                 <!-- item 1 -->
                 <div class="project-item">
                     <div class="project-card" data-category="Web Design">
-                        <img class="image-back" src="./images/web-design1.png" alt="">
-                        <img class="image-front" src="./images/web-design1.png" alt="">
+                        <img class="image-back" src="./images/web-design1.png" alt="web design project">
+                        <img class="image-front" src="./images/web-design1.png" alt="web design project">
                     </div>
                     <div class="pt-20 p-1">
                         <p class="project-category">Web Design</p>
@@ -284,8 +236,8 @@
                 <!-- item 2 -->
                 <div class="project-item">
                     <div class="project-card" data-category="Web Design">
-                        <img class="image-back" src="./images/web-design2.png" alt="">
-                        <img class="image-front" src="./images/web-design2.png" alt="">
+                        <img class="image-back" src="./images/web-design2.png" alt="web design project">
+                        <img class="image-front" src="./images/web-design2.png" alt="web design project">
                     </div>
                     <div class="pt-20 p-1">
                         <p class="project-category">Web Design</p>
@@ -296,8 +248,8 @@
                 <!-- item 3 -->
                 <div class="project-item">
                     <div class="project-card" data-category="Web Design">
-                        <img class="image-back" src="./images/web-design3.png" alt="">
-                        <img class="image-front" src="./images/web-design3.png" alt="">
+                        <img class="image-back" src="./images/web-design3.png" alt="web design project">
+                        <img class="image-front" src="./images/web-design3.png" alt="web design project">
                     </div>
                     <div class="pt-20 p-1">
                         <p class="project-category">Web Design</p>
@@ -308,8 +260,8 @@
                 <!-- example UI/UX item -->
                 <div class="project-item">
                     <div class="project-card" data-category="UI/UX">
-                        <img class="image-back" src="./images/web-design2.png" alt="">
-                        <img class="image-front" src="./images/web-design2.png" alt="">
+                        <img class="image-back" src="./images/web-design2.png" alt="ui/ux project">
+                        <img class="image-front" src="./images/web-design2.png" alt="ui/ux project">
                     </div>
                     <div class="pt-20 p-1">
                         <p class="project-category">UI/UX</p>
@@ -320,8 +272,8 @@
                 <!-- example Graphic Design item -->
                 <div class="project-item">
                     <div class="project-card" data-category="Graphic Design">
-                        <img class="image-back" src="./images/web-design1.png" alt="">
-                        <img class="image-front" src="./images/web-design1.png" alt="">
+                        <img class="image-back" src="./images/web-design1.png" alt="graphic design project">
+                        <img class="image-front" src="./images/web-design1.png" alt="graphic design project">
                     </div>
                     <div class="pt-20 p-1">
                         <p class="project-category">Graphic Design</p>
@@ -335,7 +287,7 @@
         <!-- Testimonials section  -->
         <section class="mt-60" id="testimonials">
             <div class="text-align-center flex-center">
-                <h1 class="title-tag">Testimonials</h1>
+                <h1 class="title-tag testimonials">Testimonials</h1>
                 <p class="p-max">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et porro optio,
                     dignissimos a voluptatem eligendi eaque aliquid perferendis harum neque in iste odio ducimus quod
                     doloremque ut culpa amet?</p>
@@ -435,9 +387,9 @@
                 </div>
 
                 <div class="flex-row justify-center email">
-                    
-                        <input class="email-id" type="email" name="email_address" placeholder="Enter your Email">
-                        <button class="p-0 button">Contact Me</button>
+
+                    <input class="email-id" type="email" name="email_address" placeholder="Enter your Email">
+                    <button class="p-0 button">Contact Me</button>
 
                 </div>
             </div>
@@ -449,19 +401,17 @@
     <footer>
         <section class="mt-60">
             <div class="flex-column align-center pt-30">
-                <img class="footer-image" src="./images/logo.png" alt="">
+                <img class="footer-image" src="./images/logo.png" alt="logo image">
             </div>
             <div class="mt-30">
                 <nav class="flex-row justify-center">
-                    <ul class="">
-                        <ul class="nav-list p-1">
-                            <li class="p-0"><a href="#home">Home</a></li>
-                            <li class="p-0"><a href="#about">About Me</a></li>
-                            <li class="p-0"><a href="#services">Services</a></li>
-                            <li class="p-0"><a href="#projects">Projects</a></li>
-                            <li class="p-0"><a href="#testimonials">Testimonials</a></li>
-                            <li class="p-0"><a href="#contact">Contact</a></li>
-                        </ul>
+                    <ul class="nav-list p-1">
+                        <li class="p-0"><a href="#home">Home</a></li>
+                        <li class="p-0"><a href="#about">About Me</a></li>
+                        <li class="p-0"><a href="#services">Services</a></li>
+                        <li class="p-0"><a href="#projects">Projects</a></li>
+                        <li class="p-0"><a href="#testimonials">Testimonials</a></li>
+                        <li class="p-0"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -480,14 +430,7 @@
 
     </footer>
 
-    <!-- this for the menu toggle  -->
-    <script src="./js/toggle.js"></script>
-
-    <!-- filter js file  -->
-    <script src="./js/filter.js"></script>
-    <!-- swiper Script  -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <!-- <script src="./js/swiper.js"></script> -->
+   
     <script>
         new Swiper(".testimonial-swiper", {
             slidesPerView: 1,
