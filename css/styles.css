@@ -907,6 +907,9 @@ p {
 }
 
 /* ---------- Swiper / Testimonials (swiperSlider.css) ---------- */
+.testimonials{
+    font-size: 65px;
+}
 .testimonial-swiper {
     width: 90%;
     max-width: 1100px;
