@@ -1,9 +1,6 @@
 @import url(./colors.css);
 
 /* outer swiper area */
-.testimonials{
-  font-size: 50px;
-}
 .testimonial-swiper {
   width: 80%;
   max-width: 1100px;
