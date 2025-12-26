@@ -1,0 +1,1091 @@
+/*
+  Sections (in order):
+  - Vendor import (swiper)
+  - :root color variables (from colors.css) + small fix (--accent-color)
+  - Base / global (from index.css)
+  - Utilities (displayProperties, flexproperties, alignments)
+  - Banner / navigation / hero (from banner.css)
+  - Services (from services.css)
+  - Projects (from myProject.css)
+  - Progress bars (from progressbar.css)
+  - Swiper / testimonials (from swiperSlider.css)
+  - Contact (from contact.css)
+  - Footer (from footer.css)
+
+  Notes:
+  - This file keeps comments marking original files for maintainability.
+  - I did not inline the minified vendor library; it's imported at the very top.
+  - I added a default `--accent-color` because it was referenced but not defined.
+*/
+
+/* ---------- Vendor (keep as import) ---------- */
+@import url('swiper-bundle.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* ---------- Color variables (colors.css) ---------- */
+:root {
+    /* ORANGE PALETTE */
+    --orange-50: #fff6e6;
+    --orange-100: #ffd8b0;
+    --orange-200: #ffb97a;
+    --orange-300: #ff9654;
+    --orange-400: #ff8233;
+    --orange-500: #ff6300;
+    --orange-600: #e85a00;
+    --orange-700: #b54600;
+    --orange-800: #8c3600;
+    --orange-900: #6b2a00;
+
+    /* BLACK / GRAY PALETTE */
+    --black-50: #f1f1f1;
+    --black-100: #b0b0b0;
+    --black-200: #8a8a8a;
+    --black-300: #545454;
+    --black-400: #333333;
+    --black-500: #000000;
+
+    --swiper-theme-color: #e85a00;
+
+    /* Added default accent color (was referenced in banner.css as --accent-color) */
+    --accent-color: var(--orange-50);
+}
+
+/* ---------- Base / Global (index.css) ---------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.main {
+    margin: 100px;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* margin utilities */
+.margin-x {
+    margin: 0px 100px;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.p-0 {
+    padding: 5px
+}
+
+.p-1 {
+    padding: 5px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 0px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.gap-1 {
+    gap: 10px;
+}
+
+.gap-2 {
+    gap: 20px;
+}
+
+.gap-3 {
+    gap: 30px;
+}
+
+/* width utilities */
+.w {
+    font-weight: bold;
+    width: 10px;
+}
+
+.w-10 {
+    width: 10px;
+}
+
+.w-20 {
+    width: 20px;
+}
+
+.w-30 {
+    width: 30px;
+}
+
+.w-40 {
+    width: 40px;
+}
+
+.w-50 {
+    width: 50px;
+}
+
+/* height utilities */
+.h {
+    height: 0px;
+}
+
+.h-10 {
+    height: 10px;
+}
+
+.h-20 {
+    height: 20px;
+}
+
+.h-30 {
+    height: 30px;
+}
+
+.h-40 {
+    height: 40px;
+}
+
+.h-50 {
+    height: 50px;
+}
+
+/* links and lists */
+a {
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+.title-tag {
+    font-size: 65px;
+    /* font-weight: 500; */
+}
+
+.button-primary {
+    background-color: #fd6f00;
+    border: none;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    .margin-x {
+        margin: 0px 30px;
+    }
+}
+
+/* ---------- Utilities: displayProperties.css ---------- */
+.display {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.column-direction {
+    flex-direction: column;
+}
+
+.row-direction {
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* ---------- Utilities: flexproperties.css ---------- */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* ---------- Utilities: alignments.css ---------- */
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.p-max {
+    max-width: 600px;
+}
+
+/* ---------- Banner / Nav / Hero / About (banner.css) ---------- */
+/* NOTE: removed local imports and consolidated colors into :root */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-image {
+    height: 50px;
+    width: 120px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.nav-list li {
+    margin-left: 5px;
+}
+
+.nav-list li a {
+    border-bottom: 3px solid white;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 9px;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+    border-bottom: 3px solid var(--orange-500);
+}
+
+.button {
+    background-color: #fd6f00;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fd6f00;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+/* base: hide toggle on desktop */
+.menu-button {
+    visibility: collapse;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+    .nav {
+        position: relative;
+        align-items: center;
+    }
+
+    .menu-button {
+        visibility: visible;
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        background: #fff;
+        padding: 16px 0;
+        border-top: 1px solid #eee;
+        display: none;
+        white-space: normal;
+        z-index: 1000;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+    }
+
+    .nav-list.nav-open {
+        display: flex;
+    }
+}
+
+/* banner section */
+.im-text {
+    font-size: 24px;
+}
+
+.portfolio-name {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    padding: 0px;
+}
+
+.hero-content-name {
+    color: #fd6f00;
+}
+
+.UiUx {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.Designer {
+    font-weight: 600;
+    font-size: 60px;
+    padding-left: 10vw;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+.hero-image {
+    height: 300px;
+    width: 250px;
+    align-content: flex-end;
+    border: 6px solid var(--orange-500);
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+.HireMe {
+    background-color: var(--orange-500);
+    border-radius: 5px;
+}
+
+.HireMe:hover {
+    transform: translateY(-3px);
+    fill: #535252;
+    filter: drop-shadow(2px 2px #646363);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a img:hover {
+    fill: #535252;
+    filter: drop-shadow(5px 0 20px #1d1c1c);
+    transform: translateY(-2px);
+}
+
+/* about me / skills */
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    gap: 50px;
+}
+
+.aboutMe-image {
+    height: 300px;
+    width: 250px;
+    border: 6px solid #fd6f00;
+    border-radius: 50%;
+    border-width: 5px;
+}
+
+.meter-info {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 30px 20px;
+}
+
+.meter-info p {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 50px;
+    }
+
+    .nav-image {
+        height: 40px;
+        width: 120px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        display: flex;
+        display: none;
+        flex-basis: 20px;
+        justify-content: flex-end;
+    }
+
+    .menu-button {
+        visibility: visible;
+        height: 30px;
+    }
+
+    /* banner section  */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .Designer {
+        padding-left: 0;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .skills {
+        padding-top: 30px;
+    }
+}
+
+/* ---------- Services (services.css) ---------- */
+.services-list {
+    gap: 30px;
+}
+
+.dummy-img {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--black-50);
+    padding: 10px 30px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.card>p {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .services-list {
+        /* padding: 20px; */
+        align-items: center;
+        /* flex-direction: column; */
+    }
+
+    .card {
+        width: 70% !important;
+        align-items: center;
+        padding: 10px 10px 20px 10px;
+    }
+}
+
+/* ---------- Projects (myProject.css) ---------- */
+.projectTypes>li {
+    margin: 30px;
+    border: 0.4px;
+    border-radius: 12px;
+    border-color: var(--black-100);
+    border-style: solid;
+    padding: 4px 8px;
+    background-color: var(--black-50);
+    gap: 10px;
+}
+
+.projectTypes>li>a {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.projectTypes li.active {
+    background-color: var(--orange-400);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.projectTypes li.active a {
+    color: white;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item.hide {
+    display: none;
+}
+
+.project-card {
+    width: 280px;
+    height: 250px;
+    background: #c4b4a6;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card img {
+    position: absolute;
+    width: 50%;
+    max-width: 260px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.image-back {
+    top: 0;
+    left: 40%;
+    opacity: 0.95;
+    transform: translateY(-220px);
+}
+
+.image-front {
+    top: 40px;
+    z-index: 1;
+}
+
+.project-category {
+    color: var(--orange-400);
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: bold;
+}
+
+.filter-btn {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 5px;
+}
+
+@media (max-width: 768px) {
+    .services-list {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .projectTypes {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .projectTypes>li {
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .projectTypes>li>a {
+        white-space: nowrap;
+    }
+}
+
+/* ---------- Progress bars (progressbar.css) ---------- */
+.progress-50 {
+    width: 50%;
+}
+
+.progress-60 {
+    width: 60%;
+}
+
+.progress-70 {
+    width: 70%;
+}
+
+.progress-80 {
+    width: 80%;
+}
+
+.progress-85 {
+    width: 85%;
+}
+
+.progress-88 {
+    width: 88%;
+}
+
+.progress-90 {
+    width: 90%;
+}
+
+.progress-95 {
+    width: 95%;
+}
+
+.progress-100 {
+    width: 100%;
+}
+
+.skills {
+    max-width: 700px;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.bar {
+    height: 8px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: orange;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 3px solid orange;
+    border-radius: 50%;
+}
+
+/* ---------- Swiper / Testimonials (swiperSlider.css) ---------- */
+.testimonial-swiper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    padding: 60px 0 40px;
+    overflow: visible;
+}
+
+.swiper {
+    overflow: visible;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-card {
+    background: #f5f5f5;
+    border-radius: 24px;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.content {
+    max-width: 650px;
+    line-height: 1.4;
+}
+
+.quote {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.quote::before {
+    content: "“";
+    position: absolute;
+    transform: translateY(-40%);
+    left: 0;
+    top: 0;
+    color: var(--orange-500);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.quote::after {
+    content: "”";
+    position: absolute;
+    transform: translateY(40%);
+    right: 0;
+    bottom: 0;
+    color: var(--orange-500);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.testimonial-name {
+    padding-left: 30px;
+    margin: 0 0 4px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+small {
+    color: #777;
+    margin-left: 30px;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.3;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    width: 28px;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--orange-500);
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        font-size: 50px;
+    }
+
+    .testimonial-swiper {
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    .testimonial-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 16px;
+    }
+
+    .quote {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .testimonial-name,
+    small {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+/* ---------- Contact (contact.css) ---------- */
+.email {
+    gap: 30px;
+}
+
+.email-id {
+    width: 150px;
+    padding-right: 20px;
+    border: 1px solid var(--black-100);
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+/* ---------- Footer (footer.css) ---------- */
+footer {
+    background-color: #f7f7f7;
+}
+
+.footer-image {
+    height: 150px;
+}
+
+.copyright {
+    background-color: var(--black-300);
+}
+
+.copyright>p {
+    color: #f7f7f7;
+}
+
+.FawziUiUx {
+    color: var(--orange-500);
+}
+
+/* End of combined stylesheet */
