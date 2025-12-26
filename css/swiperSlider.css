@@ -133,6 +133,9 @@ small {
 
 /* responsive like design */
 @media (max-width: 768px) {
+  .testimonials{
+  font-size: 50px;
+}
   .testimonial-swiper {
     width: 100%;
     padding: 40px 10px;
